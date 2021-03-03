@@ -1,0 +1,73 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding:10px 6px 10px 6px;
+    transition: color .3s ease;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        color: darken($color: white, $amount: 10);
+    }
+  
+}
+
+.btn-primary{
+    background-color: #C4C4C4;
+    color: black;
+    border-radius: 100px;
+
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+    &:disabled{
+        background-color: lighten($color: $primary, $amount: 15);
+    }
+    &:hover{
+        background-color: darken($color: $primary, $amount: 15);
+        
+    }
+}
+
+.btn-danger{
+    background-color: red;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: darken($color: red, $amount: 10);
+    }
+}
+
+.btn-block{
+    width: 100%;
+}
+
+
+
+.facebook{
+    background-color: $facebook;
+    border: 1px solid $facebook;
+}
+
+.twitter{
+    background-color: $twitter;
+    border: 1px solid $twitter;
+}
+.apple{
+    background-color: $apple;
+    border: 1px solid $apple;
+}
+.microsoft{
+    border: 1px solid $light-grey;
+}
+.google{
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid $light-grey;
+}

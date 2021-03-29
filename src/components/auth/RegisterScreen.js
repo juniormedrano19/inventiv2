@@ -1,41 +1,80 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import pc4 from '../../styles/img/pc4.jpg';
+import logo from '../../styles/img/logo.png';
 
 export const RegisterScreen = () => {
     return (
         <div className="auth__main-register">
-            <form className="auth__box-container">
-            <div className="auth__img-logo">
-            <div className="auth__logo-circle"></div>
-        <h3 className="auth__title-logo-register">LOGO</h3>
-        </div>
+            <div className="auth__main-register-principal">
+
+            <div  className="auth__box-container-register">
+            <form>
+            <div /* className="auth__logo" */>
+       
+       <div><img src={logo} width="65px" height="60px"  className="auth__logo-register"/></div>
+ 
+       </div>
+
+<h3 className="auth__title-logo-register1">InvenTI v2</h3>
         <div className="auth__margin">
-                <label className="auth__label">Nombres</label>
-                <input
-                    className="auth__input"
-                    
+        {/* Name */}
+        <div className="input-field-reg">
+                   <i className="fas fa-user i"></i>
+               <input
+                /* className="auth__input" */
+                type="text"
+                placeholder="Enter your Name"
+                autoComplete="off"
                 />
-                <label className="auth__label">Apellidos</label>
-                <input
-                    className="auth__input"
+               </div>
+                 {/* LastName */}
+               <div className="input-field-reg">
+                   <i className="fas fa-user i"></i>
+               <input
+                /* className="auth__input" */
+                type="text"
+                placeholder="Enter your Lastname"
+                autoComplete="off"
                 />
-                <label className="auth__label">Email</label>
-                <input
-                    className="auth__input"
+                {/* Email */}
+               </div>
+               <div className="input-field-reg">
+               <i class="fas fa-envelope"></i>
+               <input
+                /* className="auth__input" */
+                type="text"
+                placeholder="you@example.com"
+                autoComplete="off"
                 />
-                <label className="auth__label">Contraseña</label>
+               </div>
+                {/* Pass */}
+               <div className="input-field-reg ">
+                <i className="fas fa-lock i"></i>
                 <input
-                    className="auth__input"
+                   /*  className="auth__input" */
+                   type="password"
+                   placeholder="Enter you password"
+                   autoComplete="off"
                 />
-                <label className="auth__label">Repetir Contraseña</label>
-                <input
-                    className="auth__input"
-                />
+                 <i className="fas fa-eye"></i>
                 </div>
-                <input type="checkbox" id="cbox" value="checkbox" /> <span className="auth__checkbox">Acepto los términos y condiciones de la política de Protección de Datos</span>
+                {/* Confirm Pass */}
+                <div className="input-field-reg ">
+                <i className="fas fa-lock i"></i>
+                <input
+                   /*  className="auth__input" */
+                   type="password"
+                   placeholder="Confirm your password"
+                   autoComplete="off"
+                />
+                 <i className="fas fa-eye"></i>
+                </div>
+                </div>
+                <input type="checkbox" id="cbox" value="checkbox" /> <span className="auth__checkbox">Acepto los términos y condiciones de la política de Protección de Datos.</span>
                 {/* <br/><span>CAPTCHA</span> */}
                 <button
-                className="btn btn-primary btn-block mb-5 mt-1"
+                className="auth__login-button-reg"
                 >
                     REGISTRARSE
                 </button>
@@ -52,8 +91,11 @@ export const RegisterScreen = () => {
                 </Link>
 
             </form>
+            </div>
+            </div>
             <div className="auth__img">
-                <h1>IMAGEN ALUSIVA</h1>
+                {/* <h1>IMAGEN ALUSIVA</h1> */}
+               {/*  <img src={pc4} /> */}
             </div>
         </div>
     )

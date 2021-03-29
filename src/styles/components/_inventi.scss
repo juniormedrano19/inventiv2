@@ -1,0 +1,75 @@
+.inventi__appbar{
+    width: 100vw;
+    height: 50px;
+    /* border: 1px solid black; */
+    background: linear-gradient(90deg, #16222A 0%, #3A6073 100%);
+    display: flex;
+    font-family: Raleway;
+}
+
+.inventi__appbar-secondary{
+    width: 70%;
+   /*  border: 1px solid blue; */
+}
+
+.inventi__appbar-third{
+    width: 30%;
+/*     border: 1px solid green; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  
+    color: white;
+}
+
+.inventi_user{
+    display:flex;
+    justify-content: center;
+}
+
+.inventi_date{
+    display: flex;
+
+    font-family: Raleway;
+}
+
+ .inventi_date-hour{
+    font-size: 11px;
+    font-family: Raleway;
+} 
+
+.inventi__date-font{
+    font-family: Raleway;
+    font-size: 15px;
+}
+
+.inventi__displayname{
+    padding-left: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.inventi__username{
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 16px;
+ 
+}
+
+.inventi__flat{
+    border: none;
+    background-color: transparent;
+    width: 5px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.inventi__flat-menu{
+   position: relative;
+   left: -50px;
+   top: 100px;
+   width: 100px;
+}

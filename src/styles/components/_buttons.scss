@@ -50,18 +50,22 @@ font-size: 20px;
 .facebook{
     background-color: $facebook;
     border: 1px solid $facebook;
+    margin-right: 15px;
 }
 
 .twitter{
     background-color: $twitter;
     border: 1px solid $twitter;
+    margin-right: 15px;
 }
 .apple{
     background-color: $apple;
     border: 1px solid $apple;
+    margin-right: 15px;
 }
 .microsoft{
     border: 1px solid $light-grey;
+    margin-right: 15px;
 }
 .google{
     background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -70,4 +74,5 @@ font-size: 20px;
     color: transparent;
     -webkit-text-fill-color: transparent;
     border: 1px solid $light-grey;
+    margin-right: 15px;
 }

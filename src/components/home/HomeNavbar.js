@@ -11,7 +11,7 @@ export const HomeNavbar = () => {
                 <div className="home__nav-container-second">
                     <div className="home__nav-container-logo">
                     <div><img src={logo} width="65px" height="60px" /></div>
-                <div>InvenTI v2</div>
+                <div className="home__nav-logcontent">InvenTI v2</div>
                     </div>
           <div className="home__nav-container-routes">
               <ul className="home__nav-container-link">

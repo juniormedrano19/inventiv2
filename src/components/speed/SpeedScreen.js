@@ -16,7 +16,10 @@ export const SpeedScreen = () => {
     return (
         <div className="speed">
         <div className="speed__test">
-            <div className="speed__test-principal"></div>
+            <div className="speed__test-principal">
+
+              
+            </div>
             <div className="speed__test-prueba">
                 <div className="speed__test-box ">
                 <AnimatedProgressProvider

@@ -17,6 +17,7 @@ import { AuthRouter } from './AuthRouter';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { login } from '../actions/auth';
+import { HomeSection6 } from '../components/home/HomeSection6';
 
 
 export const AppRouter = () => {
@@ -84,6 +85,12 @@ const [isLoggedIn, setisLoggedIn] = useState(false)
         component={HomeScreen} 
         isAuthenticated={isLoggedIn}
         /> 
+        {/*  <PublicRoute 
+        exact 
+        path="/home/contacto" 
+        component={HomeSection6} 
+        isAuthenticated={isLoggedIn}
+        />  */}
         <PublicRoute 
          path="/auth" 
          component={AuthRouter}

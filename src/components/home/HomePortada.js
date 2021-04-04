@@ -3,6 +3,7 @@ import dashboard from '../../styles/img/dashboard.svg';
 import code1 from '../../styles/img/code1.svg';
 import world from '../../styles/img/world.svg';
 import source from '../../styles/img/source.svg';
+import photoPortada from '../../styles/img/photoPortada.svg'
 import {Link} from 'react-router-dom';
 
 export const HomePortada = () => {
@@ -24,7 +25,7 @@ export const HomePortada = () => {
                    </div>
                    <div className="home__portada-img">
                       
-                   <img src={world} className="home__svg" alt="" />
+                   <img src={photoPortada} className="home__svg" alt="" />
                    </div>
                 </div>
              

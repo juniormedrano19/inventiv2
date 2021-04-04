@@ -62,3 +62,13 @@ html,body{
     font-family:"Recoleta";
     src: url("../fonts/Recoleta-SemiBold.ttf") format("truetype");
   }
+
+  @font-face {
+    font-family: "MetropolisRegular";
+    src: url("../fonts/metropolis.semi-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MetropolisBold";
+  src: url("../fonts/metropolis.bold.otf") format("opentype");
+}

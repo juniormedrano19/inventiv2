@@ -23,7 +23,7 @@ import audio from '../../styles/img/audio.svg';
 import health from '../../styles/img/health.svg';
 import inventory from '../../styles/img/inventory.svg';
 
-import {  BrowserRouter as Router, Route, useHistory, useLocation, NavLink} from 'react-router-dom'
+import { /*  BrowserRouter as Router */ HashRouter as Router, Route, useHistory, useLocation, NavLink} from 'react-router-dom'
  
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';

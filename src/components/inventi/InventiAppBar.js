@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+/* import geoip from 'geoip-lite'; */
+/* import publicIp from "react-public-ip"; */
+/* import publicIp from 'public-ip'; */
+
 import Dropdown, {
     DropdownToggle,
     DropdownMenu,
@@ -23,9 +27,20 @@ export const InventiAppBar = () => {
     const {name} = useSelector( state => state.auth  );
     const dispatch = useDispatch();
 
+   /*  
+    (async () => {
+        console.log(await publicIp.v4());
+        //=> '46.5.21.123'
+    
+        console.log(await publicIp.v6());
+        //=> 'fe80::200:f8ff:fe21:67cf'
+    })();
+     */
+  
 
-
-    const [huawei, sethuawei] = useState({})
+    const [huawei, sethuawei] = useState({});
+    const [temp, setTemp] = useState({ });
+  
 
 
     useEffect(() => {
@@ -33,10 +48,27 @@ export const InventiAppBar = () => {
       .then(res => res.json())
       .then(data => sethuawei( data ));
     }, [])
+ 
+    /* const pruebaita=city1; */
+    const country=huawei.countryName;
+    const city=huawei.zoneName;
+   
+    const texto=(JSON.stringify(city));
+   /*  const [,requerido]=texto.split("/");
+    const sub=requerido.substring(0,requerido.length-1); */
+ console.log(texto);
+
+
+  
+console.log(huawei);
     const toTimestamp=(strDate)=>{
         var datum = Date.parse(strDate);
         return datum/1000;
      }
+  
+     
+    
+     const cityUppercase=city;
     let d=toTimestamp(huawei.formatted)
     let date = new Date(d * 1000);
     let hour=date.getHours();
@@ -98,7 +130,7 @@ export const InventiAppBar = () => {
                     }
                     <div >
                     <div className="inventi__date-font">{ `${day} ${setMonth()} ${year}`}</div>
-                <div className="inventi_date-hour">LIMA, {`${hour}:${minutes}`}</div>
+                <div className="inventi_date-hour">{`${cityUppercase},${hour}:${minutes}`}</div>
                     </div>
                
                     </div>

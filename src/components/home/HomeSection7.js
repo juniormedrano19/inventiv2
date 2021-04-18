@@ -13,6 +13,27 @@ export const HomeSection7 = () => {
                     <div className="home__section7-circle"></div>
                     <div className="home__section7-circle"></div>
                 </div>
+                <div className="home__section7-subcircleDiv">
+                    <div className="home__section7-subcirclePrincipal">
+                    <div className="home__section7-subcircle1">
+                   
+                </div>
+                    </div>
+               
+                <div className="home__circle-two">
+                    <div className="home__section7-subcircle">
+
+                    </div>
+                    <div className="home__section7-subcircle">
+
+                    </div>
+                </div>
+                <div className="home__section7-subcirclePrincipal">
+                <div className="home__section7-subcircle">
+
+                </div>
+                </div>
+                </div>
                 </div>
                
             </div>

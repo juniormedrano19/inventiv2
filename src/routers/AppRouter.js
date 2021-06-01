@@ -19,6 +19,7 @@ import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { login } from '../actions/auth';
 import { HomeSection6 } from '../components/home/HomeSection6';
+import { TicketRouter } from './TicketRouter';
 
 
 export const AppRouter = () => {
@@ -103,6 +104,7 @@ const [isLoggedIn, setisLoggedIn] = useState(false)
          component={InventiPrincipal}
          isAuthenticated={isLoggedIn}
          />
+          
          
          {/*  <Route exact path="/carga" component={LoadScreen} />  */}
         

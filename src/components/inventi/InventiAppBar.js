@@ -39,7 +39,7 @@ export const InventiAppBar = () => {
   
 
     const [huawei, sethuawei] = useState({});
-    const [temp, setTemp] = useState({ });
+
   
 
 
@@ -50,13 +50,13 @@ export const InventiAppBar = () => {
     }, [])
  
     /* const pruebaita=city1; */
-    const country=huawei.countryName;
-    const city=huawei.zoneName;
+    /* const country=huawei.countryName;
+    const city=huawei.zoneName; */
    
-    const texto=(JSON.stringify(city));
+  /*   const texto=(JSON.stringify(city)); */
    /*  const [,requerido]=texto.split("/");
     const sub=requerido.substring(0,requerido.length-1); */
- console.log(texto);
+/*  console.log(texto); */
 
 
   
@@ -68,7 +68,7 @@ console.log(huawei);
   
      
     
-     const cityUppercase=city;
+  /*    const cityUppercase=city; */
     let d=toTimestamp(huawei.formatted)
     let date = new Date(d * 1000);
     let hour=date.getHours();
@@ -130,7 +130,7 @@ console.log(huawei);
                     }
                     <div >
                     <div className="inventi__date-font">{ `${day} ${setMonth()} ${year}`}</div>
-                <div className="inventi_date-hour">{`${cityUppercase},${hour}:${minutes}`}</div>
+                <div className="inventi_date-hour">{`Lima,${hour}:${minutes}`}</div>
                     </div>
                
                     </div>

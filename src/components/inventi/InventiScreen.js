@@ -23,7 +23,7 @@ import audio from '../../styles/img/audio.svg';
 import health from '../../styles/img/health.svg';
 import inventory from '../../styles/img/inventory.svg';
 
-import { /*  BrowserRouter as Router */ HashRouter as Router, Route, useHistory, useLocation, NavLink} from 'react-router-dom'
+import {  BrowserRouter as Router /* HashRouter as Router */, Route, useHistory, useLocation, NavLink} from 'react-router-dom'
  
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -31,6 +31,9 @@ import { LoadScreen } from '../load/LoadScreen';
 import { inventiPrueba } from './inventiPrueba';
 import { InventiAppBar } from './InventiAppBar';
 import { SpeedScreen } from '../speed/SpeedScreen';
+import { TicketScreen } from '../ticket/TicketScreen';
+import { TicketReporte } from '../ticket/TicketReporte';
+import { TodoApp } from '../todo/TodoApp';
 
 export const InventiScreen = () => {
 
@@ -292,7 +295,11 @@ export const InventiScreen = () => {
     <InventiAppBar />
                 <Route exact path="/web" component={inventiPrueba} />
                 <Route exact path="/speed" component={SpeedScreen} />
+                <Route exact path="/tickets" component={TicketScreen} />
+                <Route exact path="/todo" component={TodoApp} />
+               {/*  <Route exact path="/tickets/reporteTickets" component={TicketReporte} /> */}
             </main>
+            
     </>
      )}
      />
